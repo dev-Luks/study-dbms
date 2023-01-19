@@ -1,6 +1,10 @@
 #################
 ## Misc
 
+# png, bkp
+*.png
+*.bkp
+
 bin/
 tmp/
 *.tmp
