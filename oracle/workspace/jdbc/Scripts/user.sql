@@ -46,7 +46,7 @@ SELECT USER_NAME
 FROM TBL_USER  
 WHERE USER_RECOMMENDER_ID ='korea1234';
 
---내가 추천한 //사람 
+
 /*내가 추천한 // 사람*/
 
 SELECT *FROM TBL_USER t 
