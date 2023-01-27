@@ -18,6 +18,7 @@ public class BoardDTO {
 	private String boardRegisterDate;
 	private String boardUpdateDate;
 	
+	
 	public BoardDTO() {;}
 
 	public Long getUserId() {

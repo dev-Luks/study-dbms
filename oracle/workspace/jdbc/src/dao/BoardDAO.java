@@ -60,7 +60,7 @@ public class BoardDAO {
 			preparedStatement.setLong(1, boardId);
 			resultSet = preparedStatement.executeQuery();
 			if(resultSet.next()) {
-				boardDTO = new BoardDTO();
+				boardDTO = new BoardDTO();  //이전정보 남아있으니까 초기화 시켜주기위해 여기적음
 				boardDTO.setBoardId(resultSet.getLong(++index));
 				boardDTO.setBoardTitle(resultSet.getString(++index));
 				boardDTO.setBoardContent(resultSet.getString(++index));
@@ -176,7 +176,6 @@ public class BoardDAO {
 			preparedStatement = connection.prepareStatement(query);
 			resultSet = preparedStatement.executeQuery();
 			while(resultSet.next()) {
-				index = 0;
 				boardDTO = new BoardDTO();
 				boardDTO.setBoardId(resultSet.getLong(++index));
 				boardDTO.setBoardTitle(resultSet.getString(++index));
@@ -219,6 +218,7 @@ public class BoardDAO {
 		return boards;
 	}
 }
+
 
 
 
