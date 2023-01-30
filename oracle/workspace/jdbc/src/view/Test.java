@@ -180,5 +180,11 @@ public class Test {
 //      댓글 전체 조회
 //      replyDAO.selectAll().stream().filter(dto -> dto.getReplyGroup() == 1).map(ReplyDTO::toString).forEach(System.out::println);
 //      replyDAO.selectAll().stream().filter(dto -> dto.getReplyGroup() == 5).map(ReplyDTO::toString).forEach(System.out::println);
+		
+		FollowDAO followDAO = new FollowDAO();
+//      selectMyFollower()메소드의 반환 타입은 ArrayList<UserVO>
+//      내가 follow한 사람 조회
+//      followDAO.selectMyFollower().stream().map(UserVO::toString).forEach(System.out::println);
+	
 	}
 }
